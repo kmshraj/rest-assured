@@ -1,7 +1,7 @@
 # Demo Rest Api Automation using Typicode ( https://github.com/typicode/jsonplaceholder)
 
 
-##Frame work
+## Frame work
 
 I decided to build the framework in java using
 
@@ -23,7 +23,7 @@ However I used postman to grab the raw data for the requests.
 
 
 
-##Design:
+## Design:
 
 * The Folder structure is designed as that of dev repo  src/main/java and src/test/java, So this forces the user to have same package rest.com under src/main/java and src/test/java
 * I have got the resources folder, whihc I haven't used it for this exercise
