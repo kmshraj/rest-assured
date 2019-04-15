@@ -86,7 +86,7 @@ public class DemoTest {
         String responseBody = response.getBody().asString();
 
         List<SimplePost> simplePostList = Arrays.asList(new Gson().fromJson(responseBody, SimplePost[].class));
-        Assertions.assertEquals(10, simplePostList.size()); // will fail as ID should be only 1 as we are accessing comments for id=1
+        Assertions.assertEquals(10, simplePostList.size());
 
     }
     @Test

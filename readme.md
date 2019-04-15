@@ -55,3 +55,11 @@ Run mvn test ( This will run all the tests)
 * If mvn test-compile doesn't work, Try mvn clean
 * Check .m2/settings.xml has correct profile settings / correct mirror url http://central.maven.org/maven2/
 
+
+## Failures /Bugs
+
+* GetComment from post id 1 (/posts/1/comments) Will return all the Comments, Should return comments for id =1 only. My asseration is checking for id=2 for which the test should fail- But it will pass
+* Post operation with no Content-type in the header will return only { id= 101}  with status 200, It should return entries for title and body - Hence failed
+* Put operation on (/post/103) which doesn't exist return 200, it should return 404
+* Patch operation on (/post/2) with same content say UserID =2 , it should return 304 but it returns 200 - Hence failed
+
